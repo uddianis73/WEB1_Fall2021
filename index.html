@@ -1,76 +1,132 @@
 <!doctype html>
-
 <html>
- 
   <head>
-   
+    
+    <!-- Nonvisible element in this section -->
+    <!-- CSS Goes here in STYLE tags-->
     <style>
-     
-      body {
-       
-        background: #f218e4;
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: LightCyan;
       }
-     
-      h1 {
-       
-        font-size: 48px;
-       
+      header {
+        color: black;
+        background: white;
+        padding: 1rem;
         text-align: center;
-
       }
-     
-      p {
-       
-        font-size: 1.25rem;
-       
-        line-height: 2rem;
+      nav {
+        color: white;
+        background: black;
+        padding: 1rem;
       }
-     
-      li {
-       
-        font-size: 1.25rem;
-       
-        line-height: 2rem;
-       
-        margin: .5rem;
-       
-        padding:.25rem;
+      footer {
+        color: white;
+        background: black;
+        padding: 1rem;
+        min-height: 15vh;
       }
-     
+      .container {
+        color: black;
+        background: LightCyan;
+        padding: 1rem;
+        min-height: 80vh;
+        width: 80%;
+        margin: auto;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+      .box h3{
+        background: darkblue;
+        color: white;
+        padding: 1.5rem;
+      }
+      .box p {
+        width: 30%;
+        margin: 1.5rem;
+      }
+      .box {
+        width: 30%;
+        margin: 1rem;
+        border: 1px black solid;
+      }
+      
     </style>
-   
-    <title>Web 1 Homepage</title>
-   
+    <!-- title tag for browser tab text-->
+    <title>Anis's Web 1 Homepage</title>
   </head>
- 
   <body>
-   
-    <h1>My Homepage</h1>
-     
-    <p>
-     
-      Anis Uddin<br>
-     
-      October 25, 2021<br>
-     
-      Web 1, 4th Hour
-     
-    </p>
-   
-    <hr>
-   
-   
-    <h3>Basic HTML Assignments</h3>
-   
-    <ul>
-     
-      <li><a href="Skeleton.html" target="_blank">Skeleton</a></li>
-     
-      <li><a href="FavoriteMovie.html" target="_blank">Favorite Movie</a></li>
-     
-      <li><a href="HTMLFavoriteFood.html" target="_blank">favoritefood</a></li>
-    </ul>
-   
+    <header>
+      <h1>Web Design 1 Homepage</h1>
+      <p>
+        Anis Uddin<br>
+        November 2, 2021<br>
+        Web 1, 4th Hour
+      </p>
+    </header>
+    <nav>
+      Nav Section
+    </nav>
+    <div class="container">
+      <!-- Main page content here-->
+      
+      <!-- Start of an assignment-->
+      <div class="box">
+        <img src="https://boneclones.com/images/store-product/product-670-main-main-big-1532625724.jpg" alt="#">
+        <h3>Skeleton HTML</h3>
+        <p>
+          This is the code we use for all of our assignments, it is a basic guideline for a all of our assignments.
+          <br>
+      <a href="Skeleton.html" target="_blank">Skeleton</a>
+        </p>
+      </div>
+      <!-- End of an assignment-->
+            <!-- Start of an assignment-->
+      <div class="box">
+        <img src="https://i2.wp.com/www.dasym.com/wp-content/uploads/2017/07/Cinema-Image-by-Alexandre-Chassignon-on-Flickr.jpg?fit=2304%2C1728&ssl=1" alt="#">
+        <h3>Favorite Movie HTML</h3>
+        <p>
+          In this assignment we made a code about our favorite movie. We used the skeleton code within this assignment and instead of a movie I did my favorite anime.
+          <br>
+      <a href="FavoriteMovie.html" target="_blank">Favorite Movie</a>
+        </p>
+      </div>
+      <!-- End of an assignment-->
+      <!-- Start of an assignment-->
+      <div class="box">
+        <img src="https://cdn.vox-cdn.com/thumbor/AjJ1Yx01Eu2YUMsWvBmcH8UBo6U=/0x0:3000x2147/1400x1400/filters:focal(1260x834:1740x1314):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/52781925/ramsay_HKlead.0.jpg" alt="#">
+        <h3>Favorite Food HTML</h3>
+        <p>
+          In this assignment we talked about our favorite foods and their recipes. We used the skeleton code as a guidline for this assignment.
+          <br>
+      <a href="HTMLFavoriteFood.html" target="_blank">Favorite Food</a>
+        </p>
+      </div>
+      <!-- End of an assignment-->
+      <!-- Start of an assignment-->
+      <div class="box">
+        <img src="data:image/jpeg;base64,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" alt="#">
+        <h3>HTML Streaming Page 2</h3>
+        <p>
+          In this assignment we made a code about 6 streaming services and what we think about them. In this assignment we used the new skleton code within the assignment.
+          <br>
+      <a href="StreamingPage2.html" target="_blank">Streaming Service 2</a>
+        </p>
+      </div>
+      <!-- End of an assignment-->
+      
+      
+    </div>
+    <footer>
+      Footer
+    </footer>
+    
+    
+    
+  <!-- Don't delete these but do paste them -->
   </body>
-
 </html>
