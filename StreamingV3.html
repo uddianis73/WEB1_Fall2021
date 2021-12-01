@@ -1,0 +1,193 @@
+<!doctype html>
+
+<!--
+More CSS Flexbox
+Using Flexbox as a Link
+Streaming Services v3
+-->
+
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header {
+                text-align:center;
+                background:lightgrey;
+                color:black;
+            }
+            nav {
+                background:darkred;
+                color:white;
+                padding:2vh;
+            }
+            footer {
+                background:darkred;
+                color:white;
+                padding:2vh;
+                height:10vh;
+            }
+            .container {
+                min-height:70vh;
+                background:black;
+                color:black;
+                padding:2vh;
+                width:80%;
+                margin:auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .box {
+              flex-basis: 40%;
+              text-align: center;
+              border-radius: 12px;
+              overflow: hidden;
+              background: white;
+              margin: 1rem;
+            }
+            .box-image {
+              height:30vh;
+              background: lightgrey;
+              overflow:hidden;
+            }
+            .box-image img {
+              display: block;
+              width: 100%;
+            }
+            .box h3 {
+            background: red;
+            padding: .75rem;
+            font-size: 1.25rem;
+            }
+            .box p {
+            padding: 1rem;
+            font-size: 1.15rem;
+            background:white;
+            }
+            .box a {
+              color:black;
+              text-decoration: none;
+            }
+            .box:hover {
+              box-shadow:5px 5px 15px 5px #000000;
+            }
+            
+        </style>
+        <title>Streaming v3</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Streaming v3</h1>
+            <p>
+                Anis Uddin<br>
+                Web 1, 4th HOUR<br>
+                11/11/21m
+                
+            </p>
+            <hr>
+        </header>
+        <nav>
+            Placeholder
+        </nav>
+        <div class="container">
+            <!-- Write your assignment code here -->
+            
+            <!-- Start of a box -->
+            <div class="box">
+               <a href="https://www.netflix.com/" target="Link to Netlix">
+                <div class="box-image">
+                    <img src="data:image/png;base64,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" alt="Netlix Logo">
+                </div>
+                <h3>Netflix</h3>
+                <p>
+                  Netflix is one of the biggest  paid streaming services in the world. I used to have a Netflix and it was great, but I canceled my subscription because I only watch anime now. Netflix has a lot of tv shows to watch, but they got rid of a bunch of good movies. One way to watch more tv shows and movies on Netflix is to use a VPN and change your region. In 2021, Netflix has about 209 million paid users using their service globally.
+                </p>
+               </a>
+            </div>
+            <!-- End of a box -->
+            
+            <!-- Start of a box -->
+            <div class="box">
+               <a href="https://www.youtube.com/" target="_blank">
+                <div class="box-image">
+                    <img src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg" alt="#">
+                </div>
+                <h3>YouTube</h3>
+                <p>
+                  I use YouTube almost daily. YouTube is a free streaming service that has millions of content creators that posts videos, and you can watch them for free with ads. YouTube has 2.29 billion users and is second to Facebook as the most used social media platform in the world. YouTube has a subscription called YouTube Premium costs $11.99 a month. Youtube Premium allows a user to have no ads, use the app in the background, and have access to all YouTube orginal movies and tv shows.
+                </p>
+               </a>
+            </div>
+            <!-- End of a box -->
+            
+            <!-- Start of a box -->
+            <div class="box">
+               <a href="https://www.twitch.tv/" target="_blank">
+                <div class="box-image">
+                    <img src="data:image/png;base64,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" alt="#">
+                </div>
+                <h3>Twitch</h3>
+                <p>
+                   Twitch is a live-streaming service that is owned by the company Amazon. It was launched on June 6th, 2011 that is almost 10 and a half years ago. I personally don't use Twitch mcuh because I do not watch many livestreams. Out of all the live-streaming services avaliable I feel like the Twitch is the most comfortable to use. Twitch is free with ads and streamers on Twitch make money from donations and subscriptions to their channels.
+                </p>
+               </a>
+            </div>
+            <!-- End of a box -->
+            
+            <!-- Start of a box -->
+            <div class="box">
+               <a href="https://www.crunchyroll.com/" target="_blank">
+                <div class="box-image">
+                    <img src="https://logos-world.net/wp-content/uploads/2021/02/Crunchyroll-Emblem.png" alt="#">
+                </div>
+                <h3>Crunchyroll</h3>
+                <p>
+                  Crunchyroll was founded in 2006 by Funimation. Crunchyroll is known for being one of the most popular anime streaming platforms and even has some exclusives like God of Highschool. It has 120 million users as of 2021. Their headquarters is locted in San Francisco, California. Crunchyroll has over 1,000 titles and over 30,000 episodes of anime avalaible. Crunchyroll is free with ads, but offers a subscription with no ads called Crunchyroll premium for $7.99 a month.
+                </p>
+               </a>
+            </div>
+            <!-- End of a box -->
+            
+            <!-- Start of a box -->
+            <div class="box">
+               <a href="https://www.hulu.com/" target="_blank">
+                <div class="box-image">
+                    <img src="https://assetshuluimcom-a.akamaihd.net/h3o/facebook_share_thumb_default_hulu.jpg" alt="#">
+                </div>
+                <h3>Hulu</h3>
+                <p>
+                  Hulu is a streaming platform owned by The Walt Disney Company and Comcast's NBC Universal owns a minority stake aswell. Hulu is exclusively avalaible only in the United States. Hulu's customer service number is 1 (888) 265-6650 if you have any trouble with service or if you just have any questions. I personally do not have a Hulu account, but I have used a friend's Hulu account to watch Prison Break. Hulu was launched back in October 29, 2007, that is almost exactly 14 years ago.
+                </p>
+               </a>
+            </div>
+            <!-- End of a box -->
+            
+            <!-- Start of a box -->
+            <div class="box">
+               <a href="https://www.funimation.com/" target="_blank">
+                <div class="box-image">
+                    <img src="https://sm.pcmag.com/pcmag_uk/review/f/funimation/funimation_zagy.jpg" alt="#">
+                </div>
+                <h3>Funimation</h3>
+                <p>
+                  Funiamtion is an extremely popular anime streaming service, it owns Crunchyroll. It was founded on May 9, 1994 by Gen Fukunaga, that is over 27 years ago. Funimation's premium costs $5.99 a month. Funimation has over 2.5 million users subscribed and has over 15,000 hours of anime avalianle. funimation bought Crunchyroll for over 1 billion dollars. Funimation did this to create one dominant anime streaming service. I personally do not use Funimation, but I might purchase a subscription soon.
+                </p>
+               </a>
+            </div>
+            <!-- End of a box -->
+            
+            
+            
+            
+        </div><!-- Closing tag for container -->
+        <footer>
+            Placeholder
+        </footer>
+    </body>
+</html>
