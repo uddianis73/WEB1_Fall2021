@@ -34,7 +34,7 @@ footer {
 }
 .container {
   color: black;
-  background: beige;
+  background: lightblue;
   padding: 1rem;
   min-height: 80vh;
   width: 80%;
@@ -113,4 +113,82 @@ footer {
 .row-content p {
   line-height:2.25rem;
   font-size:1.15rem;
+}
+/* Gallery Page CSS */
+.section-header {
+  width:100%;
+  padding:2rem 1rem;
+}
+.flex-container {
+  display:flex;
+  width:100%;
+  padding:1vh;
+  flex-flow:row wrap;
+  justify-content:center;
+  align-items:center;
+}
+.gallery-item {
+  position:relative;
+  flex-basis:45%;
+  overflow:hidden;
+  margin:1vh;
+}
+.gallery-item img {
+  display:block;
+  width:100%;
+}
+.gallery-overlay {
+  position:absolute;
+  bottom:0;
+  background:rgba(0,0,0,.4);
+  width:100%;
+  font-size:1.15rem;
+  text-align:center;
+  color:white;
+  height:0;
+  opacity:0;
+  transition:.5s ease;
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:center;
+}
+.gallery-overlay > * {
+  width:100%;
+  padding:1rem;
+}
+.gallery-item:hover .gallery-overlay {
+  height:100%;
+  opacity:1;
+}
+/* favorite sites*/
+            .site-item {
+              width: 30%;
+              margin: 1vh;
+              overflow: hidden;
+              transition: .5s ease;
+            }
+            .site-content {
+              display: flex;
+              flex-flow: row nowrap;
+            }
+            .site-image {
+              width: 100%;
+              overflow: hidden;
+              transition: .5s ease;
+            }
+            .site-image img {
+              width: 100%;
+            }
+            .site-description {
+              width: 0%;
+              transition: .5s ease;
+            }
+            .site-item:hover  .site-description {
+              width: 50%;
+padding:1vh;
+font-size: 1.15rem;
+}
+.site-item:hover  .site-image {
+width: 50%;
 }
